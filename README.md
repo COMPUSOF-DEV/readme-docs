@@ -4,6 +4,9 @@ Convierte cualquier `README.md` en una web navegable con búsqueda, menú latera
 
 ---
 
+## DEMO
+[readme-docs](https://compusof-dev.github.io/readme-docs/)
+
 ## Qué incluye
 
 - Render de Markdown en el navegador.
