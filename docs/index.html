@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="es" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>README Navegable</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Source+Code+Pro:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar" id="sidebar">
+        <div class="brand">
+          <div class="brand-title">README Navegable</div>
+          <div class="brand-subtitle">Generado desde README.md</div>
+        </div>
+
+        <div class="search">
+          <input id="searchInput" type="search" placeholder="Buscar en la documentación..." />
+          <div id="searchResults" class="search-results" aria-live="polite"></div>
+        </div>
+
+        <nav id="toc" class="toc"></nav>
+      </aside>
+      <div class="overlay" id="overlay"></div>
+
+      <main class="content">
+        <header class="topbar">
+          <div class="topbar-left">
+            <button class="menu-btn" id="menuBtn" aria-label="Mostrar menú">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <div class="title">Archivo actual: README.md</div>
+          </div>
+          <div class="topbar-right">
+            <div class="theme-icons" role="group" aria-label="Cambiar tema">
+              <button class="theme-btn" data-theme="light" aria-label="Tema Light">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M12 4.5V2m0 20v-2.5m7.5-7.5H22M2 12h2.5m13.2 6.8 1.8 1.8M4.5 4.5l1.8 1.8m0 11.4-1.8 1.8m15.9-15.9-1.8 1.8M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10Z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+              <button class="theme-btn" data-theme="dark" aria-label="Tema Dark">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M20.5 14.5A8 8 0 1 1 9.5 3.5a6.5 6.5 0 1 0 11 11Z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </header>
+
+        <article id="content" class="doc" aria-live="polite">
+          <p class="loading">Cargando README.md…</p>
+        </article>
+      </main>
+    </div>
+
+    <button class="scroll-top" id="scrollTop" aria-label="Volver arriba">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path
+          d="m6 14 6-6 6 6"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </button>
+
+    <noscript>
+      <div class="noscript">
+        Este visor requiere JavaScript para renderizar el Markdown.
+      </div>
+    </noscript>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
